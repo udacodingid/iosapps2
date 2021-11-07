@@ -8,6 +8,18 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    let dataAnimals = ["Dog", "Cat", "Zebra", "Horse", "Fish", "Bird"]
+    
+    let dataFlowers = [
+        "Bunga Melati", "Bunga Kembang", "Bunga Anggrek", "Bunga Lidah Mertua", "Bunga Modern", "Bunga Jepang"
+    ]
+    
+    let dataCountry = [
+        "Jakarta", "Bandung","Surabaya", "Medan",
+        "Padang", "Batam"
+    ]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,23 +35,59 @@ class TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+//        return self.dataAnimals.count;
+        return 6
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+       
+        let cell:UITableViewCell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        
+        
+        switch (indexPath.section){
+        case 0 :
+            cell.textLabel?.text = dataFlowers[indexPath.row]
+        case 1 :
+            cell.textLabel?.text = dataAnimals[indexPath.row]
+            
+        case 2 :
+            cell.textLabel?.text = dataCountry[indexPath.row]
+        default:
+            cell.textLabel?.text = "Other"
+            
+        }
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let headerCell:HeaderViewCell  = tableView.dequeueReusableCell(withIdentifier: "headerCell") as! HeaderViewCell
+        
+        headerCell.backgroundColor = UIColor.cyan
+        
+        switch (section) {
+        case 0:
+            headerCell.labelHeader.text = "LIST FLOWERS"
+        case 1 :
+            headerCell.labelHeader.text = "LIST ANIMALS"
+            
+        case 2 :
+            headerCell.labelHeader.text = "LIST COUNTRIES"
+        default:
+            headerCell.labelHeader.text = "OTHER"
+        }
+        
+        return headerCell
+        
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.

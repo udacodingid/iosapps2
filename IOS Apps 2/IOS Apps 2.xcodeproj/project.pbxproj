@@ -16,6 +16,7 @@
 		6A3E45532737B11E00D53CA1 /* gambar4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A3E45522737B11E00D53CA1 /* gambar4.png */; };
 		6A3E45552737B95B00D53CA1 /* FindAgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E45542737B95B00D53CA1 /* FindAgeViewController.swift */; };
 		6A3E45572737C9B700D53CA1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E45562737C9B700D53CA1 /* TableViewController.swift */; };
+		6A3E45592737D77400D53CA1 /* HeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E45582737D77400D53CA1 /* HeaderViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		6A3E45522737B11E00D53CA1 /* gambar4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gambar4.png; sourceTree = "<group>"; };
 		6A3E45542737B95B00D53CA1 /* FindAgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAgeViewController.swift; sourceTree = "<group>"; };
 		6A3E45562737C9B700D53CA1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		6A3E45582737D77400D53CA1 /* HeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				6A3E45402737AF0200D53CA1 /* SceneDelegate.swift */,
 				6A3E45422737AF0200D53CA1 /* ViewController.swift */,
 				6A3E45442737AF0200D53CA1 /* Main.storyboard */,
+				6A3E45582737D77400D53CA1 /* HeaderViewCell.swift */,
 				6A3E45542737B95B00D53CA1 /* FindAgeViewController.swift */,
 				6A3E45472737AF0400D53CA1 /* Assets.xcassets */,
 				6A3E45492737AF0400D53CA1 /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 				6A3E45432737AF0200D53CA1 /* ViewController.swift in Sources */,
 				6A3E453F2737AF0200D53CA1 /* AppDelegate.swift in Sources */,
 				6A3E45412737AF0200D53CA1 /* SceneDelegate.swift in Sources */,
+				6A3E45592737D77400D53CA1 /* HeaderViewCell.swift in Sources */,
 				6A3E45572737C9B700D53CA1 /* TableViewController.swift in Sources */,
 				6A3E45552737B95B00D53CA1 /* FindAgeViewController.swift in Sources */,
 			);
